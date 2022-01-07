@@ -1,0 +1,140 @@
+.body-background{
+    background-image: url("Indian currency.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 520px;
+}
+#close{
+    font-size: 17.5px;
+    border-radius: 7.5px;
+    margin-top: 27.5px;
+    margin-right: 27.5px;
+    float: right;
+    transition: transform .2s;
+}
+#close:hover{
+    transform: scale(1.075);
+}
+.container{
+    text-align: center;
+}
+.title{
+    min-width: 490px;
+    max-width: 525px;
+    background-color: #100ECD;
+    color: white;
+    font-size: 37.5px;
+    margin-top: 60px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    border-radius: 5px;
+}
+#share{
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 2.5px;
+    width: 57.5px;
+}
+hr{
+    border-color: rgb(107, 107, 107);
+    border-width: 1.75px;
+}
+.block-savings{
+    display: flex;
+    align-items: center;
+}
+.heading-1{
+    font-size: 23px;
+    background-color: #67DC1A;
+    min-width: 125px;
+    height: 35px;
+    padding-top: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.heading-2{
+    font-size: 19.5px;
+    background-color: #67DC1A;
+    min-width: 205px;
+    height: 35px;
+    padding-top: 7px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+#input_savings, #cash_in_hand{
+    min-width: 250px;
+    font-size: 19px;
+    background-color: #BFF91D;
+}
+#add-savings{
+    min-width: 75px;
+    margin-left: 5px;
+    background-color: #40A036;
+    color: white;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.child-title-1, .child-title-2{
+    background-color: lightcoral;
+    width: 315px;
+    padding-top: 7.5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: 1.5px solid black;
+}
+.block-spent{
+    display: flex;
+    align-items: center;
+}
+#exp_day, #exp_week, #exp_month, #exp_total{
+    background-color: #D333A7;
+    min-width: 250px;
+    height: 35px;
+    color: black;
+    height: 35px;
+    font-size: 18.5px;
+}
+.spent-day, .spent-total{
+    background-color: #7637DC;
+    width: 160px;
+    height: 35px;
+    font-size: 25px;
+    color: white;
+    padding-top: 3.5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.spent-week, .spent-month{
+    background-color: #7637DC;
+    width: 180px;
+    height: 35px;
+    font-size: 21.5px;
+    color: white;
+    padding-top: 6.5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+#add_exp, #show_list{
+    background-color: #4C66A0;
+    color: white;
+    width: 200px;
+    height: 40px;
+    font-size: 21.5px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+#add_exp{
+    margin-right: 30px;
+}
+#show_list{
+    margin-left: 30px;
+}
+#add_exp:hover{
+    background-color: #375285;
+}
+#show_list:hover{
+    background-color: #375285;
+}

@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>DailyKharcha - Expenditure Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="main-page.css">
+    </head>
+    <body class="body-background">
+        <button onclick="close()" id="close" class="btn btn-danger" data-toggle="modal" data-target="#alert_close">
+            CLOSE
+            <span class="glyphicon glyphicon-log-out"></span>
+        </button>
+        <br><br>
+        <div class="container">
+            <center>
+                <div class="modal fade" id="alert_close">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" style="font-size: 22px;">Close DailyKharcha</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="p-modal" style="font-size: 17px;">Are you sure you want to close DailyKharcha?</p>
+                                <button onclick="confirm()" class="btn btn-success confirm" style="margin-right: 7.5px;">YES</button>
+                                <button class="btn btn-danger cancel" style="margin-left: 7.5px;" data-dismiss="modal">NO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="title"><b>DailyKharcha</b></h1>
+                <a href="whatsapp://send?text=Hi! I have been using the DailyKharcha App and I found it really easy to calculate and maintain a record of my expenses and savings. You can also calculate your expenses and savings easily and conveniently by downloading the DailyKharcha App!" data-action="share/whatsapp/share" target="_blank">
+                    <button onclick="share()" id="share">
+                        <img style="height: 40px; width: 40px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Z6axeZk-Uc_9WH9ZadYlmqRtaZFM27gvGgZTEuNTUzKG6DgUlIpCfjytGI05Wj5lAAQ&usqp=CAU">
+                    </button>
+                </a>
+                <hr>
+                <br>
+                <!--Savings and Cash-in-Hand-->
+                <h2 class="child-title-1">SAVINGS</h2>
+                <br>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 block-savings">
+                    <h4 class="heading-1">Savings:</h4>
+                    <input id="input_savings" class="form-control" type="number" placeholder="Add to Savings">
+                    <button id="add-savings" onclick="add_savings()">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        ADD
+                    </button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 block-savings">
+                    <h4 class="heading-2">Cash-in-Hand:</h4>
+                    <input id="cash_in_hand" class="form-control" placeholder="Cash-in-Hand" readonly="true">
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <!--Amount Spent (Day/Week/Total)-->
+                <h2 class="child-title-2">AMOUNT SPENT</h2>
+                <br>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 block-spent">
+                    <h4 class="spent-day">Today:</h4>
+                    <input id="exp_day" class="form-control" readonly="true">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 block-spent">
+                    <h4 class="spent-week">This Week:</h4>
+                    <input id="exp_week" class="form-control" readonly="true">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 block-spent">
+                    <h4 class="spent-month">This Month:</h4>
+                    <input id="exp_month" class="form-control" readonly="true">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 block-spent">
+                    <h4 class="spent-total">Total:</h4>
+                    <input id="exp_total" class="form-control" readonly="true">
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <!--Navigation Buttons-->
+                <button onclick="exp_page()" id="add_exp">Add Expenses</button>
+                <button onclick="list_page()" id="show_list">Expense List</button>
+            </center>
+        </div>
+        <script src="main-page.js"></script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Expense List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="exp-list.css">
+    </head>
+    <body class="body-background">
+        <center>
+            <div class="header">
+                <br>
+                <h2 id="heading">Expense List</h2>
+                <hr>
+            </div>
+            <br>
+            <label id="category-select">Select a Category:</label>
+            <br>
+            <div class="categories">
+                <button id="household" class="category_button" onclick="exp_household()"><span class="glyphicon glyphicon-home icon"></span>Household</button>
+                <button id="groceries" class="category_button" onclick="exp_groceries()"><span class="glyphicon glyphicon-grain icon"></span>Groceries</button>
+                <button id="overheads" class="category_button" onclick="exp_overheads()"><span class="glyphicon glyphicon-list-alt icon"></span>Overheads</button>
+                <button id="education" class="category_button" onclick="exp_education()"><span class="glyphicon glyphicon-education icon"></span>Education</button>
+                <button id="accessories" class="category_button" onclick="exp_accessories()"><span class="glyphicon glyphicon-sunglasses icon"></span>Accessories</button>
+                <button id="loans" class="category_button" onclick="exp_loans()"><span class="glyphicon glyphicon-file"></span>Loans</button>
+                <button id="traveling" class="category_button" onclick="exp_traveling()"><span class="glyphicon glyphicon-plane icon"></span>Traveling</button>
+                <button id="health" class="category_button" onclick="exp_health()"><span class="glyphicon glyphicon-baby-formula icon"></span>Health</button>
+                <button id="maintenance" class="category_button" onclick="exp_maintenance()"><span class="glyphicon glyphicon-wrench icon"></span>Maintenance</button>
+                <button id="entertainment" class="category_button" onclick="exp_entertainment()"><span class="glyphicon glyphicon-film icon"></span>Entertainment</button>
+                <button id="investments" class="category_button" onclick="exp_investments()"><span class="glyphicon glyphicon-usd icon"></span>Investments</button>
+                <button id="others" class="category_button" onclick="exp_others()">Others</button>
+            </div>
+            <br><br>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 input-container">
+                <label class="input-title">AMOUNT :</label>
+                <input id="amount" class="form-control" type="text" readonly="true">
+            </div>
+            <br><br>
+            <br><br>
+            <br><br>
+            <img id="chart">
+            <br><br>
+            <button onclick="back()" id="back" class="btn btn-danger">BACK</button>
+        </center>
+        <script src="exp-list.js"></script>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Add Expenses</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="add-exp.css">
+    </head>
+    <body class="body-background">
+        <center>
+            <div class="modal fade" id="alert_delete">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" style="font-size: 22px;">Delete Current Expense</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="p-modal" style="font-size: 17px;">Are you sure you want to delete the current expense?</p>
+                            <button onclick="confirm()" class="btn btn-success confirm" style="margin-right: 7.5px;">YES</button>
+                            <button class="btn btn-danger cancel" style="margin-left: 7.5px;" data-dismiss="modal">NO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <br>
+                <h2 id="heading">Add Expenses</h2>
+                <hr>
+            </div>
+            <br>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 input-container">
+                <label class="input-title">AMOUNT :</label>
+                <input id="amount" class="form-control" type="number" placeholder="Enter Amount">
+            </div>
+            <br><br>
+            <br><br>
+            <br>
+            <hr>
+            <div class="alert">
+                <h3 id="alert-amt">Please enter a valid amount!</h3>
+            </div>
+            <hr>
+            <br>
+            <label id="category-select">Select a Category:</label>
+            <br>
+            <div class="categories">
+                <button id="household" class="category_button" onclick="add_household()"><span class="glyphicon glyphicon-home icon"></span>Household</button>
+                <button id="groceries" class="category_button" onclick="add_groceries()"><span class="glyphicon glyphicon-grain icon"></span>Groceries</button>
+                <button id="overheads" class="category_button" onclick="add_overheads()"><span class="glyphicon glyphicon-list-alt icon"></span>Overheads</button>
+                <button id="education" class="category_button" onclick="add_education()"><span class="glyphicon glyphicon-education icon"></span>Education</button>
+                <button id="accessories" class="category_button" onclick="add_accessories()"><span class="glyphicon glyphicon-sunglasses icon"></span>Accessories</button>
+                <button id="loans" class="category_button" onclick="add_loans()"><span class="glyphicon glyphicon-file"></span>Loans</button>
+                <button id="traveling" class="category_button" onclick="add_traveling()"><span class="glyphicon glyphicon-plane icon"></span>Traveling</button>
+                <button id="health" class="category_button" onclick="add_health()"><span class="glyphicon glyphicon-baby-formula icon"></span>Health</button>
+                <button id="maintenance" class="category_button" onclick="add_maintenance()"><span class="glyphicon glyphicon-wrench icon"></span>Maintenance</button>
+                <button id="entertainment" class="category_button" onclick="add_entertainment()"><span class="glyphicon glyphicon-film icon"></span>Entertainment</button>
+                <button id="investments" class="category_button" onclick="add_investments()"><span class="glyphicon glyphicon-usd icon"></span>Investments</button>
+                <button id="others" class="category_button" onclick="add_others()">Others</button>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <button id="delete" class="btn btn-danger" data-toggle="modal" data-target="#alert_delete">DELETE</button>
+            <br>
+            <br>
+            <br>
+        </center>
+        <script src="add-exp.js"></script>
+    </body>
+</html>

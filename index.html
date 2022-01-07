@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Welcome to DailyKharcha!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <label id="welcome">WELCOME TO:</label>
+            <hr>
+            <label id="title_1">DailyKharcha</label>
+            <br>
+            <label id="title_2">Expenditure Calculator</label>
+            <hr>
+            <div id="loading">
+                <br>
+                <br>
+                <!--Loader-->
+                <div class="loader" id="loader">
+                    <div class="loader_image">
+                        <div class="loader_coin">
+			                <img id="img_coin" src="icons8-rupee-48.png" alt="">
+		                </div>
+                       <div class="loader_hand">
+			               <img id="img_hand" src="loader-hand.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <h3 id="waiting"></h3>
+                <!--Loader-->
+                <br>
+            </div>
+            <hr>
+            <br>
+            <button id="proceed" onclick="proceed()">
+                Proceed
+                <span class="glyphicon glyphicon-arrow-right"></span>
+            </button>
+            <br><br>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

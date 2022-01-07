@@ -1,0 +1,113 @@
+.body-background{
+    background-image: url("Indian currency.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 520px;
+    text-align: center;
+}
+#heading{
+    color: white;
+    min-width: 440px;
+    max-width: 475px;
+    background-color: #A53D3D;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 6.5px;
+    margin-bottom: 30px;
+}
+hr{
+    width: 90%;
+    border-color: black;
+}
+.input-container{
+    align-content: center;
+    vertical-align: middle;
+}
+.input-title{
+    min-width: 135px;
+    max-width: 155px;
+    font-size: 20px;
+    background-color: #6DBD2D;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 3.5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#amount{
+    min-width: 350px;
+    max-width: 350px;
+    background-color: #6DBD2D;
+    margin-left: 10px;
+    margin-top: 2px;
+    height: 35px;
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.alert{
+    margin-top: -25px;
+    margin-bottom: -10px;
+    height: 90px;
+}
+#alert-amt{
+    display: none;
+    color: white;
+    background-color: #4A4A4A;
+    font-weight: 600;
+    min-width: 375px;
+    max-width: 425px;
+    height: 38px;
+    padding-top: 5px;
+    border-radius: 17.5px;
+    animation: pop-up 2s infinite ease-in-out;
+}
+@keyframes pop-up {
+    0%{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.03, 1.03);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
+#category-select{
+    color: white;
+    background-color: #227CAF;
+    font-size: 25px;
+    width: 255px;
+}
+.icon{
+    margin-right: 5px;
+}
+.categories{
+    text-align: center;
+    margin-top: 25px;
+    min-width: 470px;
+    max-width: 700px;
+    height: fit-content;
+}
+.category_button{
+    color: black;
+    background-color: #F9DD54;
+    font-weight: 300;
+    width: 200px;
+    margin: 7.5px;
+    font-size: 19.5px;
+    border-radius: 10px;
+}
+.category_button:hover{
+    background-color: #d4ba38;
+}
+#delete{
+    font-size: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-weight: 600;
+}
